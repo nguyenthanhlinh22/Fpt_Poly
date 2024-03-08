@@ -1,0 +1,16 @@
+.star li {
+    list-style-type: none;
+    padding: 0px;
+}
+.star {
+    font-size: 2em;
+    color: #ddd;
+    display: inline-block;
+}
+.orange {
+    color: orange;
+}
+
+.output {
+    background-color: #ddd;
+}

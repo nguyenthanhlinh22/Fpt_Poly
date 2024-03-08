@@ -1,0 +1,22 @@
+{
+    "products":[
+        {
+            "id": 1 ,
+            "productName" : "iphone 12 mini",
+            "price": "900",
+            "description":"iPhone 12 mini"
+        },
+        {
+            "id": 2 ,
+            "productName" : "Galaxy note 20 utra",
+            "price": "1200",
+            "description":"Galaxy note 20 utra"
+        },
+        {
+            "id": 1 ,
+            "productName" : "huawei mate 30",
+            "price": "1400",
+            "description":"huawei mate 30"
+        }
+    ]
+}

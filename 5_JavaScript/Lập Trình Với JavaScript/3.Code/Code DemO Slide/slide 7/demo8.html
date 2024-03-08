@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="hienthidemo8.html" method="get" onsubmit="return valForm()">
+            <input type="text" id="firstname" name="firstname" placeholder="First Name"/>
+            <input type="text" id="lasttname" name="lasttname" placeholder="Last Name"/>
+            <input type="text" id="age" name=" age" placeholder="age"/>
+            <input type="submit" value="submit"/>
+
+        </form>
+        <script>
+            function valForm() {
+                var p = event.target.children;
+                if (p.firstname.value == ""){
+                    massage("need a first name!");
+                    return false;
+
+                }
+                if (p.lastname.value ==""){
+                    massage("need a last name !!");
+                    return false;
+                }
+                if (p.age.value == ""){
+                    massage("need an age");
+                    return false;
+                }
+                return true;
+            }
+            function massage(m) {
+                document.getElementById("wrapper").innerHTML = m ;
+            }
+        </script>
+
+    </div>
+    
+</body>
+</html>

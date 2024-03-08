@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Học trên trường"
+		},
+		{
+			"path": "../Lam Lap"
+		},
+		{
+			"path": "../../../F8-FullStack/JavaScript"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JavaScript"
+	}
+}

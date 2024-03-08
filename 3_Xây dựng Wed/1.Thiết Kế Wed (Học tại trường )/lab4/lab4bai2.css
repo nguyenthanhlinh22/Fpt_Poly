@@ -1,0 +1,14 @@
+#menu>a{Font-variant:small-caps;
+    Color:blue;
+    Text-decoration:none;}
+
+#menu>a:visited{ Color:green;}
+
+#menu>a:hover{
+    Color:red;
+ Text-decoration:underline;
+}
+#linh{
+    text-align: center;
+}
+

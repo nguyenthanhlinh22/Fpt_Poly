@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+       function xacNhan(traloi) { 
+        var ketQua = "";
+        if (traloi) {
+                ketQua = "Tuyet voi. Chuc ban chien thang!";
+        } else {
+            ketQua = "Hen gap lai ban nhe!";
+        }
+        return ketQua;
+        }
+        var traloi = confirm("Ban se choi game chu?"); 
+        var thongbao = xacNhan(traloi);
+        alert (thongbao);
+    </script>
+    
+</body>
+</html>

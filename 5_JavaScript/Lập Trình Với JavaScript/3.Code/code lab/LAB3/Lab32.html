@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab32</title>
+    <style>
+        body{
+            margin: 0 auto;
+            padding: 0px;
+            width: 800px;
+        }
+        .cuuchuong{
+            position: relative;
+            top: 50px;
+            text-align: center;
+            width: 50%;
+            height: 450px;
+            background-color: rgb(252, 0, 0);
+           
+            /* border: 5px solid green; */
+            border-radius: 10px;
+        }
+        .cuuchuong p{
+            position: relative;
+            top: 25px;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            /* margin: 30px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="cuuchuong">
+        <script>
+            document.write("<p>");
+            n = Number(prompt("Bạn muốn in bảng cửu chương mấy? "));
+        
+            document.write("BANG CUU CHUONG " + n);
+               
+            for (j = 1; j <= 10; j++) {
+                let kq = n * j;
+                document.write("<br>", n + " x " + j +" = " + kq );
+            }
+            document.write("</p>");
+        </script>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+         const vong = parseInt(prompt("số lượng số bạn muốn nhập vào "));
+        function sum(x,y,z){
+            return x+y+z;
+        }
+       
+        const phepTinh = [];
+        for(let i = 0 ; i < vong ; i++){
+            const number = parseInt(prompt(`số thứ ${i+1}`));
+            phepTinh.push(number);
+        }
+        console.log(sum(...phepTinh));
+
+    </script>
+</body>
+</html>

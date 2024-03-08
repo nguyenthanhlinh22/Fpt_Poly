@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab33.1</title>
+    <script src="lab33.js"></script>
+    <style>
+        table tr td button{
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+        }
+        table tr td{
+            text-align: center;
+            width: 100px;
+            height: 100px;
+        }
+        .nen td{
+            background-color: rgb(159, 159, 159);
+            color: red;
+            font-size: 30px;
+            font-weight: 900;
+        }
+        table tr td button:hover{
+            background-color: rgb(191, 132, 141);
+            box-shadow: 0 0 10px orangered;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>MÁY TÍNH</h2>
+        <table>
+            <tr class="nen">
+                <td id="so1"></td>
+                <td id="pt"></td>
+                <td id="so2"></td>
+                <td id="kq"></td>
+            </tr>
+            <tr>
+                <td><button onclick="nhapso(7)">7</button></td>
+                <td><button onclick="nhapso(8)">8</button></td>
+                <td><button onclick="nhapso(9)">9</button></td>
+                <td><button onclick="nhappheptinh('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="nhapso(4)">4</button></td>
+                <td><button onclick="nhapso(5)">5</button></td>
+                <td><button onclick="nhapso(6)">6</button></td>
+                <td><button onclick="nhappheptinh('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="nhapso(1)">1</button></td>
+                <td><button onclick="nhapso(2)">2</button></td>
+                <td><button onclick="nhapso(3)">3</button></td>
+                <td><button onclick="nhappheptinh('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="nhapso(0)">0</button></td>
+                <td><button onclick="reset()">C</button></td>
+                <td><button onclick="thuchien()">=</button></td>
+                <td><button onclick="nhappheptinh('/')">/</button></td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

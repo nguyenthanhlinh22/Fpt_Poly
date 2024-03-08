@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab32</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        function chonloai(a){
+            if(a == 0){
+                var arr = ["Kéo","Búa","Bao"];
+                var x = Math.round(2 * Math.random());
+                document.getElementById("may").innerHTML = arr[x];
+                document.getElementById("connguoi").innerHTML= "Kéo";
+                if(arr[x] == "Kéo"){
+                    document.getElementById("ketqua").innerHTML = "Bạn Đã HÒA :)";
+                }
+                if(arr[x] == "Búa"){
+                    document.getElementById("ketqua").innerHTML = "Bạn Đã THUA :( "; 
+                } 
+                if (arr[x] == "Bao"){
+                    document.getElementById("ketqua").innerHTML = "Bạn Đã THẮNG (^ v ^) "; 
+                }
+            }
+            if(a == 1){
+                var arr = ["Kéo","Búa","Bao"];
+                var x = Math.round(2 * Math.random());
+                document.getElementById("may").innerHTML = arr[x];
+                document.getElementById("connguoi").innerHTML= "Búa";
+                if(arr[x] == "Kéo"){
+                    document.getElementById("ketqua").innerHTML = "Bạn Đã THẮNG (^ v ^) ";
+                }
+                if(arr[x] == "Búa"){
+                    document.getElementById("ketqua").innerHTML = "Bạn Đã  HÒA :) "; 
+                }
+                if(arr[x] == "Bao"){
+                    document.getElementById("ketqua").innerHTML = "Bạn Đã THUA :( "; 
+                }
+            }
+            if(a == 2){
+                var arr = ["Kéo","Búa","Bao"];
+                var x = Math.round(2 * Math.random());
+                document.getElementById("may").innerHTML = arr[x];
+                document.getElementById("connguoi").innerHTML= "Bao";
+                if(arr[x] == "Kéo"){
+                    document.getElementById("ketqua").innerHTML = "Bạn Đã THUA :(";
+                }
+                if(arr[x] == "Búa"){
+                    document.getElementById("ketqua").innerHTML = "Bạn Đã THẮNG (^ v ^) "; 
+                }
+                if(arr[x] == "Bao"){
+                    document.getElementById("ketqua").innerHTML = "Bạn Đã HÒA :)  "; 
+                }
+            }
+        }
+        function resert(){
+            arr = "";
+            a = "";
+            document.getElementById("connguoi").innerHTML= a;
+            document.getElementById("may").innerHTML = arr;
+            document.getElementById("ketqua").innerHTML = "";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Chào mừng bạn đến với trò chơi : KÉO , BÚA , BAO !!!</h1>
+    </div>
+    <center>
+        <table>
+            <tr style="background-color: darkkhaki;">
+                <td>Máy</td>
+                <td>Kết quả</td>
+                <td>Bạn</td>
+            </tr>
+            <tr style="background-color: darkkhaki;">
+                <td id="may"></td>
+                <td id="ketqua"></td>
+                <td id="connguoi"></td>
+            </tr>
+            <tr>
+                <td><button onclick="chonloai(0)">Kéo</button></td>
+                <td><button onclick="chonloai(1)">Búa</button></td>
+                <td><button onclick="chonloai(2)">Bao</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><button onclick="resert()">Chơi lại</button></td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

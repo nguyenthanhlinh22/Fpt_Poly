@@ -1,0 +1,29 @@
+/* reset css */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.addproduct{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+
+    border: 2px solid black;
+
+
+}
+h2{
+    font-size: 30px;
+
+}
+a{
+    text-decoration: none;
+    
+    padding: 4px;
+    color: black;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- gg font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <!-- link css -->
+  
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Tiệm ảnh 2004</title>
+    <link rel="icon" href="pulic/img/T.png" type="image/x-icon">
+</head>
+<body>
+   <div id="main">
+    <!-- heder -->
+    <header>
+      
+           <!-- logo -->
+           <div class="header_logo">
+                 <a href="/index.php?action=trangchu"><img src="pulic/img/T.png" alt="Logo wed"></a>
+            </div>
+            <!-- nav -->
+            <ul class="nav_links">
+                <li class="nav_link"><a href="index.html">Trang chủ </a></li>
+                <li class="nav_link"><a href="#">Giới Thiệu </a></li>
+                <li class="nav_link"><a href="#">Dịch Vụ</a></li>
+                <li class="nav_link"><a href="#">Phụ Kiện </a></li>
+                <li class="nav_link"><a href="#">Trang phục </a></li>
+                <li class="nav_link"><a href="#">Blog </a></li>
+                <li class="nav_link"><a href="#">Liên Hệ </a></li>
+            </ul>
+         <!-- header_login -->
+         
+            <div class="header_login">
+              
+             
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href='#'><button onclick='dangNhap()'> Đăng nhập</button></a>
+                
+            </div>
+<div class="giohang">
+    <div class="tittle_giohang">
+        <h3>Giỏ Hàng</h3>
+    </div>
+    <div class="list_giohang">
+        <table>
+                    <!-- <th>Thao tác</th>
+                    <td></td> -->
+             
+                <tr>
+                    <th>Mã DV</th>
+                    <th>Tên DV</th>
+                    <th>Hình</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                
+                
+                </tr>
+               <td><a href="'.$linkdel.'"><input type="button" class="button_delete_cart" value="Xóa"></a></td>';
+                        <tr>
+                            <td>TA-1</td>
+                            <td>sp1</td>
+                            <td><img src="'.$spcart[1].'" height="80" alt=""></td>
+                            <td>100.000</td>
+                            <td>2</td>
+                            <td>100.000</td>
+                            
+                        </tr>
+                        
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Tổng thành tiền:</th>
+                        <th></th>
+                        <th></th>
+                        <th class="total_cart">100.000</th>
+                        <th></th>
+                    </tr> 
+          
+        </table>
+    </div>
+    
+    <div class="thongtindatlich">
+        <div class="tittle_thongtindatlich">
+            <h2>Thông tin khách hàng</h2>
+        </div>
+        <div class="form-datlich">
+            <form action="/index.php?action=thanhtoan"  method="post">
+                <input type="hidden" name="tongdonhang" value="<?=$tong?>">
+                <div class="row-add-thongtin">
+                    <label class="tt_tt">Họ và Tên</label>
+                    <input type="text" name="name" placeholder="Họ và Tên">
+                </div>
+                <div class="row-add-thongtin">
+                    <label class="tt_tt">Số Điện Thoại</label>
+                    <input type="text" name="tel" placeholder="Số Điện Thoại">
+                </div>
+                <div class="row-add-thongtin">
+                    <label class="tt_tt">Gmail</label>
+                    <input type="email" name="email" placeholder="Gmail">
+                </div>
+                <div class="row-add-thongtin">
+                    <label class="tt_tt">Địa Chỉ</label>
+                    <input type="text" name="address" placeholder="Địa Chỉ">
+                </div>
+                <div class="row-add-thongtin pd" >
+                    Ngày <br>
+                    <input type="date" name="date">
+                </div>
+                <div class="row-pttt" >
+                    <h2>Phương thức thanh toán</h2> <br>
+                    <input type="radio" name="pttt" value="1">  Thanh toán qua ví momo <br>
+                    <input type="radio" name="pttt" value="2">  Thanh toán trực tiếp<br>
+                    <input type="radio" name="pttt" value="3">  Thanh toán qua tài khoản ngân hàng<br>
+                </div>
+                <div class="button_giohang">
+                    <input type="submit" name="thanhtoan" class="btn_ttmh" value="Đặt lịch">
+                    <input style="background-color: #DC3545;" type="submit" value="Xóa tất cả">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>looking for number max and number min</title>
+  </head>
+  <body>
+    <script>
+      function numberMax(arr) {
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > max) {
+            max = arr[i];
+          }
+        }
+        return max;
+      }
+      function numberMin(arr1) {
+        let min = arr1[0];
+        for (let i = 0; i < arr1.length; i++) {
+          if (arr1[i] < min) {
+            min = arr1[i];
+          }
+        }
+        return min;
+      }
+
+      let mang = [];
+      let vong = parseInt(prompt("Bạn muốn Nhập Bao Nhiêu số"));
+      for (let i = 0; i < vong; i++) {
+        let num = parseInt(prompt(`Nhập số thư ${i + 1}`));
+        mang.push(num);
+      }
+      let soLonNhat = numberMax(mang);
+      let soNhoNhat = numberMin(mang);
+      console.log("số lớn nhất là" + soLonNhat);
+      console.log("số lớn nhất là" + soNhoNhat);
+
+      let solonnhat = Math.max(...mang);
+      let sonhonhat = Math.min(...mang);
+      console.log("số lớn nhất là" + solonnhat);
+      console.log("số lớn nhất là" + sonhonhat);
+    </script>
+  </body>
+</html>

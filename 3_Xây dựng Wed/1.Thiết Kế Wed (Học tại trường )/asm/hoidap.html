@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #modau{
+           
+           height: 50px;
+           background-color:rgb(51, 153, 255);
+           border: 2px solid #CFCFCF;
+           margin-left: 0px;
+           border-radius: 10px;
+        }
+    
+        #modau h1{
+            margin: 0px;
+            text-align: center;
+            color: white;
+        }
+        #modau h1:hover{
+            color:yellow;
+        }
+            
+      
+      
+
+    </style>
+</head>
+<body>
+    <div id="modau">
+        <h1>Hỏi Đáp Thắc Mắc </h1>
+    </div>
+    <H2 style="color: blue;">Hộp thư góp ý trường THPT Võ Nguyên Giáp <br>
+        Position</H2>
+    <p style="font-size: larger;">Quý vị có thể gửi thư tới chúng tôi bằng cách hoàn tất biểu mẫu dưới đây. Để chúng tôi có
+        thể trả lời thư của Quý vị,
+        xin vui lòng khai báo đầy đủ. Những thư có nhiều nội dung và có file đính kèm vui lòng gửi trực tiếp vào email:
+        <a href="#">vonguyngiap@gmail.com</a> 
+    </p><br>
+        <label for="contact_name">
+            &nbsp;Tên bạn:
+        </label>
+        <br>
+        <input type="text" name="name" id="contact_name" size="30" class="inputbox" value="">
+        <br>
+        <label id="contact_emailmsg" for="contact_email">
+            &nbsp;Địa chỉ email:
+        </label>
+        <br>
+        <input type="text" id="contact_email" name="email" size="30" value="" class="inputbox required validate-email"
+            maxlength="100">
+        <br>
+        <label for="contact_subject">
+            &nbsp;Tiêu đề thông điệp:
+        </label>
+        <br>
+        <input type="text" name="subject" id="contact_subject" size="30" class="inputbox" value="">
+        <br><br>
+        <label id="contact_textmsg" for="contact_text">
+            &nbsp;Nội dung thông điệp:
+        </label>
+        <br>
+        <textarea cols="50" rows="10" name="text" id="contact_text" class="inputbox required"></textarea>
+        <br>
+        <input type="checkbox" name="email_copy" id="contact_email_copy" value="1">
+        <label for="contact_email_copy">
+            Gởi một bản copy thông điệp này đến hộp email của bạn </label>
+        <br>
+        <br>
+        <button class="button validate" type="submit">Gởi</button>
+       
+    
+    
+</body>
+</html>

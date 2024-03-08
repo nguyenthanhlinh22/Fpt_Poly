@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+    <script>
+        // Ẩn/hiện phần giao diện Phí vận chuyển
+        function hien_thi(visible) {
+            var phi_vc = document.getElementById("phi_vc");
+            phi_vc.style.display = visible ? "" : "none";
+        }
+
+        // Kiểm tra dữ liệu hợp lệ trên form
+        function kiem_tra() {
+            // Kiểm tra sản phẩm
+            var sp = document.getElementById("san_pham");
+            if (sp.value.length == 0) {
+                alert("Vui lòng nhập tên sản phẩm!");
+                return false;
+            }
+
+            // Kiểm tra đơn giá
+            var gia = document.getElementById("don_gia");
+            if (isNaN(gia.value)) {
+                alert("Vui lòng nhập số vào đơn giá!");
+                return false;
+            } else if (parseFloat(gia.value) <= 0) {
+                alert("Vui lòng nhập số dương vào đơn giá!");
+                return false;
+            }
+
+            // Kiểm tra loại sản phẩm
+            var loai = document.getElementById("loai");
+            if (loai.value.length == 0) {
+                alert("Vui lòng chọn loại sản phẩm!");
+                return false;
+            }
+
+            var email = document.getElementById("email");
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regex.test(email.value)) {
+                alert("Vui lòng nhập địa chỉ email hợp lệ!");
+                return false;
+            }
+
+            // Kiểm tra nơi nhận hàng
+            // var radios = document.getElementsByName("dia_chi");
+            // if (!radios[0].checked && !radios[1].checked) {
+            //   alert("Vui lòng chọn nơi nhận hàng!");
+            //   return false;
+            // }
+            var nhanHangSelect = document.getElementById("dia_chi");
+            if (nhanHangSelect.selectedIndex === -1) {
+                alert("Vui lòng chọn nơi nhận hàng");
+                return false;
+            }
+
+            // Thông báo dữ liệu hợp lệ
+            alert("Chúc mừng bạn đã nhập đúng!");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="return kiem_tra()">
+        <p>
+            <label for="san_pham">Tên sản phẩm:</label>
+            <input type="text" name="san_pham" id="san_pham">
+        </p>
+        <p>
+            <label for="don_gia">Đơn giá:</label>
+            <input type="text" name="don_gia" id="don_gia">
+        </p>
+        <p>
+            <label for="loai">Loại sản phẩm:</label>
+            <select name="loai" id="loai">
+                <option value="">Chọn loại sản phẩm</option>
+                <option value="1">Loại 1</option>
+                <option value="2">Loại 2</option>
+                <option value="3">Loại 3</option>
+            </select>
+        </p>
+        <!-- <p>
+            <label for="email">Email nhận hàng:</label>
+            <input type="text" name="email" id="email">
+        </p> -->
+        <p>
+            <label for="dia_chi">Nơi nhận hàng:</label>
+            <input type="radio" name="dia_chi" value="Trong thành" onclick="hien_thi(false)" checked> Trong thành
+            <input type="radio" name="dia_chi" value="Ngoại thành" onclick="hien_thi(true)"> Ngoại thành
+        </p>
+        <p id="phi_vc" style="display:none;">
+            <label for="phi">Phí vận chuyển:</label>
+            <input type="text" name="phi" id="phi">
+        </p>
+        <p>
+            <input type="submit" value="Đặt mua">
+        </p>
+    </form>
+</body>
+
+</html>

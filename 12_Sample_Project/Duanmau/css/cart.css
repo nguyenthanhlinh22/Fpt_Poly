@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-color: #55cad7;
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table {
+    width: 700px;
+    border-collapse: collapse;
+    border: 2px solid #000000;
+    margin-top: 20px;
+}
+ 
+.a1, .a2 , .a3 , .a4{
+    width: 540px;
+    height: 25px;
+    font-size: 15px;
+ 
+}
+ 
+th,
+td {
+
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.checkout-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #555;
+}
+
+.checkout-button1 {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-button1:hover {
+    background-color: #555;
+}
+
+.checkout-button2, .a5 {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.checkout-button2:hover,
+.a5:hover {
+    background-color: #555;
+}
+
+
+.settings-icon {
+    background: #fff;
+    position: fixed;
+    top: 35px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: #1b1b1b;
+}
+
+.icon {
+    position: fixed;
+    top: 35px;
+    right: 80px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#setting-caidat {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+
+
+}
+
+.settings-icon:hover #setting-caidat {
+    display: block;
+    font-size: 14px;
+    height: 200px;
+    width: 150px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    top: 100%;
+    right: 5px;
+    white-space: nowrap;
+}
+
+.settings-icon i {
+    font-size: 24px;
+    color: #333;
+}
+
+.settings-icon #setting-caidat {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+}
+
+.settings-icon:hover #setting-caidat {
+    display: block;
+}
+
+.settings-icon #setting-caidat a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px 0;
+}
+
+.settings-icon #setting-caidat a:hover {
+    background-color: #f0f0f0;
+}

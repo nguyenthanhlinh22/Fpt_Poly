@@ -1,0 +1,9 @@
+-----slide2 phần 2------
+    ^^^trang 30^^^^
+       Nội dung
+
+
+primary key : kháo chính 
+
+unique: duy nhất 
+binary: nhị phân

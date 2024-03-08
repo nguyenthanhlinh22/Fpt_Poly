@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+}
+table tr td{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 40px;
+
+}
+table tr td button{
+    width: 120px;
+    height: 120px;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.hang1{
+   border: 0px;
+   background-color: darkseagreen; 
+}

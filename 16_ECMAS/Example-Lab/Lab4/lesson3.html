@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+
+        var fs = require('fs').promises;
+        var axios = require('axios');
+
+        async function fetchData() {
+            try {
+                
+                const data = await fs.readFile('data.json', { encoding: 'UTF-8' });
+                console.log("Data loaded from disk:", data);
+
+            
+                const response = await axios.get('http://jsonplaceholder.typicode.com/todos/1');
+                console.log('Data downloaded from URL:', response.data);
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        // Call the async function
+        fetchData();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+h1{
+    font-variant:small-caps;
+    font-size:20px;
+    word-spacing:2px;
+    letter-spacing:1px;
+    line-height:25px;
+    color:white;
+    text-shadow:0 0 5px red;
+
+}
+em#linh{
+    font-variant:small-caps;
+    font-size:20px;
+    word-spacing:2px;
+    letter-spacing:1px;
+    line-height:25px;
+    color: red;
+
+}
+em#tlinh{
+    font-variant:small-caps;
+    font-size:20px;
+    word-spacing:2px;
+    letter-spacing:1px;
+    line-height:25px;
+    color: blue;
+}
+em#ttin{
+    font-variant:small-caps;
+    font-size:20px;
+    word-spacing:2px;
+    letter-spacing:1px;
+    line-height:25px;
+    color: greenyellow;
+}
+
+
+body{
+    Text-align:center
+}
+strong{
+    color: brown;
+}

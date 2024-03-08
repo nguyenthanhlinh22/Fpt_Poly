@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1 </title>
+  </head>
+  <body>
+    <script>
+      const result = {
+        success: ["max-length", "no-amd", "prefer-arrow-functions"],
+        failure: ["no-var", "var-no-top", "linebreak"],
+        skipped: ["no-extrasemi", "no-dup-key"],
+      };
+
+      function makeList(arr) {
+        const failureItem = [];
+        for (const element of arr) {
+          failureItem.push(`<li class"text-warning">${element}</li>`);
+        }
+
+        // console.log(failureItem);
+        return failureItem;
+      }
+      const failuresItem = makeList(result.failure);
+      console.log(failuresItem.join("\n"));
+    </script>
+  </body>
+</html>

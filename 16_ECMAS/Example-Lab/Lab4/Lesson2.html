@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        const axios = require('axios');
+
+        //1
+        async function fetchUrls(urls){
+            const result = [];
+            for(const url of urls){
+                const res = await axios.get(url);
+                result.push(res);
+
+            }
+            return result;
+
+        }
+        //Mục Tiêu: Hàm này tải dữ liệu từ các URL một cách tuần tự (synchronous).
+        //Lợi ích: Nếu có nhiều URL, hàm này sẽ tải từng URL một sau khi hoàn thành URL trước đó. Điều này có thể hữu ích nếu server hoặc API có giới hạn về số lượng kết nối đồng thời.
+
+
+        //2
+        async function fetchUrlsParallel(urls){
+            const result = await Promise.all(
+                urls.map(function(url){
+                    return axios.get(url);
+                })
+            )
+            return result;
+        }
+        //Mục Tiêu: Hàm này tải dữ liệu từ các URL một cách song song (asynchronous).
+        //Lợi ích: Tất cả các yêu cầu được gửi cùng một lúc, giúp tận dụng tối đa tài nguyên mạng và giảm thời gian chờ đợi tổng cộng của tất cả các yêu cầu.
+    </script>
+    
+</body>
+</html>

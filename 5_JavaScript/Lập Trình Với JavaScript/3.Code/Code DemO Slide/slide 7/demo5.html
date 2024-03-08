@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="welcome">Hi các cậu</div>
+    <form action="">
+    <input type="checkbox" name="test" value="how">
+    <input type="checkbox" name="test" value="are">
+    <input type="checkbox" name="test" value="you">
+    <input type="checkbox" name="test" value="?">
+    <input type="button" onclick="checkedTest()" value="Click me !">
+    </form>
+
+    <script>
+        function checkedTest() {
+            let p = event.target.parentElement;
+            for(var i=0; i<p.test.length; i++){
+                if(p.test[i].checked==true){
+                    console.log(p.test[i].value);
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

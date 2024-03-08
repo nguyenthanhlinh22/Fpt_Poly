@@ -1,0 +1,51 @@
+-đơn kế thừa:
+-kế thừa:
+-Trừu tượng hóa :là làm đơn giãn hóa mọi thứ
+18
+khi thiết kế dữ liệu là phải tuân theo 
+gm phải theo 1 quy tắc
+sddt là phải theo số 
+
+o<x<10
+19
+dữ liệu là được biểu diễn như là một tập hợp
+kiểu dữ liệu kiểu số
+20
+cột là thuộc tính 
+hàng là thông tin của nhân viên
+21 
+quan hệ bao gồm tên 
+tên là thuộc tính 
+và cộc thay đổi theo thời gian
+mỗi dòng là một thực thể 
+ 22
+đặt điểm của thực thể có thể chứa hoặc không 
+một hàng không thể trùng 
+trùng thì nó là một thực thể 
+thì nó sẽ dư dữ liệu
+cộc là thuộc tính 
+hàng là 1 thực thể
+tên của cột , cột mô tả giá trị của cột
+tất cả dữ liệu 
+24
+25 
+gọi là thuộc tính điểm danh 
+có nhiều thứ có thể trùng như tên nơi sinh địa chỉ 
+nhưng mã sv cccd thì không thể trùng 
+gọi là khóa 
+26
+khóa ngoài  
+một hay 1 số thuộc tính có một hay nhiều giá trị phù hợp 
+27
+not null 
+check 
+trigger 
+
+
+
+
+ 
+ 
+
+
+

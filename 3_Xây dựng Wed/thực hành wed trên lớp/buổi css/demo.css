@@ -1,0 +1,34 @@
+header{
+    width: 100%;
+    height: 300px;
+    /* chứa ảnh background */
+    background-image: url(https://i.pinimg.com/236x/bb/85/04/bb85045f219315b542806c1cb43dae8a.jpg);
+    /* không lặp ảnh */
+    background-repeat: no-repeat;
+    /* canh giữa */
+    background-position: center center;
+    /* size ảnh bách râu */
+    background-size: 100px;
+
+}
+header.user{
+    width: 100px;
+
+}
+
+
+.content1,.content2,.content3{
+    width: 100px;
+    height: 20px;
+    /* viền */
+    border: 2px solid blue;
+    margin: 10PX;
+    /* dồn hết sang trái */
+    float: left;
+    color: aliceblue;
+
+}
+.content3{
+    /* clear là xóa float ở content 3 */
+    clear: left;
+}

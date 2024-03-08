@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab31</title>
+    <script>
+        //1.khai báo.
+        var a, b , pheptoan;
+        a = Number(prompt("Nhập a = "));
+        b = Number(prompt("Nhập b = "));
+        pheptoan = prompt("Nhập phép toán ( + , - , x , /) : ");
+    </script>
+    <style>
+        body{
+            margin: 0 auto;
+            padding: 0px;
+            width: 800px;
+        }
+        .pheptinh{
+            position: relative;
+            top: 50px;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            background-color: white;
+           
+            /* border: 5px solid green; */
+            border-radius: 50px;
+        }
+        .pheptinh p{
+            position: relative;
+            top: 25px;
+            font-size: 50px;
+            color:black ;
+            /* margin: 30px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="pheptinh">
+        <script>
+            document.write("<p>");
+            //2.xử lý
+            switch(pheptoan){
+                case "+": 
+                    document.write( a + " + " + b + " = " + (a+b));
+                    break;
+                case "-": 
+                    document.write( a + " - " + b + " = " + (a-b));
+                    break;
+                case "x": 
+                    document.write( a + " x " + b + " = " + (a*b));
+                    break;
+                case "/": 
+                    document.write( a + " / " + b + " = " + (a/b));
+                    break;
+                default:
+                    document.write(pheptoan + " không phải là phép toán  ");
+                    break;
+            }
+            document.write("</p>");
+        </script>
+    </div>
+    
+</body>
+</html>

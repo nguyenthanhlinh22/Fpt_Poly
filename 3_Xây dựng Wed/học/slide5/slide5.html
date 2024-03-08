@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slide5.css">
+</head>
+<body>
+    <form action="#" method="post" enctype="text">
+        <!-- readonly -->
+        <div>
+            <label for="">id</label>
+            <input type="text" value="cc40" readonly>
+        </div>
+        <br>
+        <!-- disacled -->
+        <div>
+            <label for="">id</label>
+            <input tabindex="1" type="text" value="cc40" disabled>
+
+        </div>
+        <!-- tabintex dùng để đánh số -->
+        <div>
+            <label for="">id</label>
+            <input tabindex="2" type="text" value="cc40" readonly>
+        </div>
+
+
+        <div>
+            
+            <strong>Tên Đăng Nhập:</strong>
+           <input type="text" value="">
+        </div>
+        <div>
+              <!-- label  -->
+              <label for="us">us</label>
+              <input type="text" id="us">
+        </div>
+        <div>
+            <strong>Mật Khẩu: </strong>
+           <input type="password">
+        </div>
+        <br>
+        <div>
+            <input type="pass" placeholder="mời nhập pass">
+        </div>
+        <div>
+            <strong>Ảnh</strong>
+           <input type="file">
+        </div>
+        <div>
+            <fieldset>
+                <legend>mi giới tính chi</legend>
+                <strong>Giớitính </strong>
+           <input name="linh" value="nam" type="radio"><i>Nam</i>
+           <input name="linh" value="nu" type="radio"> <i>nữ</i>
+           <input name="linh" value="khac" type="radio"> <i>khác</i>
+
+            </fieldset>
+        </div>
+        <div>
+            <strong>Giới tính</strong>
+           <input name="linh" value="nam" type="radio"><i>Nam</i>
+           <input name="linh" value="nu" type="radio"> <i>nữ</i>
+           <input name="linh" value="khac" type="radio"> <i>khác</i>
+        </div>
+        <div>
+            <strong>sở thích</strong>
+            <input name="sothich" type="checkbox"> <i>dád bóng</i>
+            <input name="sothich" type="checkbox"> <i>xem phim </i>
+            <input name="sothich" type="checkbox"> <i> coi phim </i>
+            <input name="sothich" type="checkbox"> <i>lắp logo</i>
+
+
+        </div>
+        <input type="hidden" value="hihi">
+        <input type="submit" value="đăng kí">
+        <input type="reset" value="đặt lại ">
+        <input type="button" value="hủy đăng kí">
+        <input type="image" src="https://i.pinimg.com/236x/6b/2b/f3/6b2bf3243b25c32ab9994bc41683032b.jpg" width="100px" height="auto">
+        <div>
+            <strong>địa chỉ</strong>
+            <!-- cols: kí tự  rows: hàng-->
+            <textarea name="địa chỉ" id="" cols="30" rows="3"></textarea>
+        </div>
+        <div>
+            <strong>Bằng Cấp</strong>
+            <!-- combobox : chọn 1-->
+            <select name="" id="" > 
+                <option value="thcs">tốt nghiệp cấp 2</option>
+                <option value="thpt">tốt nghiệp cấp 3</option>
+                <option value="cd"> tốt nghiếp cao đẵng</option>
+            </select>
+        </div>
+        <div>
+            <strong>Bằng Cấp</strong>
+            <!-- listbox : chọn nhiều-->
+            <select name="" id="" multiple size="3"> 
+                <option value="thcs">tốt nghiệp cấp 2</option>
+                <option value="thpt">tốt nghiệp cấp 3</option>
+                <option value="cd"> tốt nghiếp cao đẵng</option>
+            </select>
+        </div>
+        <!-- bottom có thêm ảnh  -->
+        <button type="submit">đăng kí</button>
+        <button type="submit">đăng kí</button>
+        <!-- time -->
+        <div>
+            <strong>thời gian </strong>
+            <input type="date">
+            <input type="week">
+            <input type="time">
+        </div>
+        <div>
+            <!-- số -->
+            <!-- min :thấp nhât ; max :cao nhất-->
+            <!-- step: bươc nhảy -->
+            <div>
+                <strong>số</strong>
+            <input type="number" min="2" max="10" step="2">
+            <!-- range: kéo -->
+            <input type="range">
+                <div>
+                    <strong>gm</strong>
+                    <input type="color">
+                    <input type="gmail">
+                </div>
+                <div>
+                    <label for="">tìm kiếm</label>
+                    <input type="text" list="timkiem">
+                    <datalist id="timkiem">
+                        <option value="QN"></option>
+                        <option value="đn"></option>
+                    </datalist>
+                    <hr>
+
+                </div>
+            </div>
+           
+        </div>
+
+
+    </form>
+
+
+    
+</body>
+</html>

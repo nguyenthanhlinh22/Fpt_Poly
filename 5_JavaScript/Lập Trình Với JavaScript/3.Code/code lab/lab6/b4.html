@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Clicker Speed Test Game</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .box {
+            background-color: #4286f4;
+            color: #fff;
+            font-size: 24px;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            background-color: #0048b6;
+        }
+
+        #result {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Clicker Speed Test Game</h1>
+    <div id="game"></div>
+    <div id="result"></div>
+    <button onclick="startGame()">Start Game</button>
+    <script>
+        var game = document.getElementById("game");
+        var result = document.getElementById("result");
+        var timeStart, timeEnd, timeDiff, clickCount;
+
+        function startGame() {
+            game.innerHTML = "";
+            result.innerHTML = "";
+            clickCount = 0;
+            timeStart = new Date().getTime();
+            for (var i = 0; i < 10; i++) {
+                var box = document.createElement("div");
+                box.classList.add("box");
+                box.addEventListener("click", function () {
+                    clickCount++;
+                    this.remove();
+                });
+                game.appendChild(box);
+            }
+            setTimeout(function () {
+                timeEnd = new Date().getTime();
+                timeDiff = (timeEnd - timeStart) / 1000;
+                result.innerHTML = "Your time: " + timeDiff.toFixed(2) + "s" + "<br>" + "Click count: " + clickCount;
+            }, 10000); // 10 seconds
+        }
+    </script>
+</body>
+
+</html>

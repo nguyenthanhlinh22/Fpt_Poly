@@ -1,0 +1,3 @@
+có thể liên kiết trực tiếp hoặc link 
+<script>
+trực tiếp thì nên để ở cuối body vì nó chạy code từ trên xuống dưới

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="welcome"> xin chào bạn! </div>
+    <div class="wrapper">javascript is fun!</div>
+    <input type="text" name="myNum1" onkeypress="return numCheck()" onpaste="return false">
+    <input type="text" name="myNum2" onkeypress="return numCheck2()" onpaste="return false">
+
+    <script>
+        function numCheck() {
+            massage("Number:" + !isNaN(event.key));
+            return !isNaN(event.key)
+        }
+        function numCheck2() {
+            massage("Not A Number:" + isNaN(event.key));
+            return isNaN(event.key);
+
+        }
+        function massage(m) {
+            document.getElementById("wrapper").innerHTML = m;
+        }
+    </script>
+</body>
+</html>

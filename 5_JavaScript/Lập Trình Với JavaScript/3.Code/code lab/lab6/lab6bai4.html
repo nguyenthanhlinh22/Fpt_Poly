@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style>
+      #box {
+        width: 500px;
+        height: 500px;
+        background-color: black;
+        position: relative;
+      }
+
+      .red-box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="red-box"></div>
+    </div>
+
+    <script>
+      const box = document.querySelector('#box');
+      const redBox = document.querySelector('.red-box');
+
+      function getRandomPosition() {
+        const x = Math.floor(Math.random() * (box.offsetWidth - redBox.offsetWidth));
+        const y = Math.floor(Math.random() * (box.offsetHeight - redBox.offsetHeight));
+        return [x, y];
+      }
+
+      function moveRedBox() {
+        const [x, y] = getRandomPosition();
+        redBox.style.top = `${y}px`;
+        redBox.style.left = `${x}px`;
+      }
+
+      box.addEventListener('mouseover', moveRedBox);
+
+      let startTime = 0;
+      redBox.addEventListener('click', function(event) {
+        const duration = Date.now() - startTime;
+        alert(`Duration: ${duration}ms`);
+      });
+
+      redBox.addEventListener('mousedown', function(event) {
+        startTime = Date.now();
+      });
+    </script>
+  </body>
+</html>

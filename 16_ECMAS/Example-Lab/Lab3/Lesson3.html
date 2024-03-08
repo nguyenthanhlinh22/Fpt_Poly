@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var Entity = (name, delay) =>{
+      //     this.name = name ;
+      //     this.delay = delay ;
+      // };
+      // Entity.prototype.greet = () => {
+      //     setTimeout(() => {
+      //         console.log('xin chào các bạn mình tên là ', this.name);
+      //     },bind(this), this.delay)
+      // };
+
+      // var Name  = new Entity('thành Linh ', 5000);
+      // var cpp = new Entity('anhng', 30);
+
+      // Name.greet();
+      // cpp.greet();
+          class Entity {
+              constructor(name, delay ){
+                  this.name = name ;
+                  this.delay = name;
+              };
+              greet(){
+                  setTimeout(() => {
+                  console.log('xin chào các bạn mình tên là ', this.name);
+              }, this.delay)
+              };
+
+          };
+                const Name  = new Entity('thành Linh ', 5000);
+                const cpp = new Entity('anhng', 30);
+
+                  Name.greet();
+                  cpp.greet();
+    </script>
+  </body>
+</html>

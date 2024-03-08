@@ -1,0 +1,167 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#content>header{
+    background: green;
+    background-size: 100% 100% ;
+    height: 10px;
+    padding-bottom: 10%;
+}
+#content>nav{
+    line-height: 40px;
+    background-color:rgb(42, 171, 210);
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    
+}
+#content>article{
+    min-height: 300px;
+    width: 75%;
+    background-color: white;
+    float: left;
+}
+#content>aside{
+    min-height: 500px;
+    width: 25%;
+    background-color:white;
+    float: right;
+
+}
+/* #content>footer{
+    
+    
+   
+    line-height:40px;
+    
+    text-align:center;
+    font-variant:normal;
+    clear:both;
+
+   
+
+
+} */
+
+
+#content>nav>a{
+    color:white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#content>nav>a:hover{
+    color:black;
+    padding: 5px 10px;
+    border: 1px solid green;
+    border-radius: 50px;
+    border-color:black;
+}
+
+
+#sanpham{
+   float :left;
+    width: 180px;
+    
+    
+}
+#khung{
+    width: 170px;
+    background-color: white;
+    border-radius: 10px;
+   
+    margin: 10px;
+    border: 2px solid #CFCFCF;
+
+}
+#khung>img{
+    width: 180px;
+    height: 150px;
+    text-align: center;
+ 
+}
+#khung .name{
+    color: green;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold ;
+    margin-bottom: 5px ;
+    padding: 3px;
+
+}
+#khung .gia{
+    text-align: center;
+    font-size:17px;
+    padding: 17px;
+
+}
+#khung .mua{
+    text-align: center;
+}
+#khung .mua .nut{
+  
+   
+     background-color:red; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;  
+  margin-bottom:5px ;  
+    
+}
+
+#thanhdoc{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid #CFCFCF;
+    margin: 10px;
+    border-radius: 10px;
+}
+#thanhdoc .sale{
+    color: blue;
+    font-style: unset;
+}
+footer {
+    background-color: green;
+    width: 100%;
+    height: 96px;
+    clear: both;
+}
+/* #cuoi{
+   float: left;
+   background-color: green;
+
+} */
+#khung .mua .nut:hover{
+    background-color: black;
+   
+}
+footer ul{
+    margin: 0px;
+    width:27%;
+    float: left;
+    list-style: none;
+    background-color: green;
+}
+footer ul li{
+    margin: 10px;
+    
+}
+
+
+
+  
+
+
+
+
+

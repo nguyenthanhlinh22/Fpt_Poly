@@ -1,0 +1,6 @@
+CODE 4 Trang 
+1 trang đăng nhập 
+2 trang đăng đăng kí 
+3 trang quên mật khẩu 
+4 trang sản phẩm 
+5 trang category 

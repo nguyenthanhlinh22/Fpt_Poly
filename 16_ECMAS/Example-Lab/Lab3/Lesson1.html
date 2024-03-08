@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var multipl =  (num1, num2) => {num1*num2};
+        
+        var num11 = multipl(1,2);
+        console.log(num11)
+
+        var toCelsius = (fahrenheit => (5/9)* (fahrenheit - 32) );
+
+        var padZero = (num, totalLen) =>{
+            var numStr = num.toString();
+            var numZero = totalLen - numStr.length;
+            for(let i = 1 ; i <= numZero.length ; i++ ){
+                numStr = "0" + numStr
+            } 
+            return numStr
+        };
+
+        var power = (base, exponent) => {
+            var result =1 ;
+             for(let i = 0 ; i < exponent ; i++ ){
+                result*= base ;
+             };
+             return result;
+        };
+
+        var greet = (who) =>{
+            console.log("hello"+who)
+        }; 
+
+    </script>
+    
+</body>
+</html>

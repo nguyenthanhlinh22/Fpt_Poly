@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 0.7vw;
+}
+.boxcenter{
+    width: 70%;
+    margin: 0 auto;
+}
+.row{
+    float: left;
+    width: 100%;
+}
+.mb{
+    margin-bottom: 30px;
+}
+.mr{
+    margin-right: 2%;
+}
+.demo{
+    background-color: antiquewhite;
+    min-height: 100px;
+}
+.header{
+    background-color: aquamarine;
+    border: 1px #090 solid;
+    font-size: 1vw;
+    color: blue;
+    border-radius: 5px;
+}
+.footer{
+    background-color: aquamarine;
+    border: 1px #090 solid;
+    font-size: 0.8vw;
+    color: blue;
+    border-radius: 5px;
+    padding: 20px;
+}
+.header h1 {
+    margin: 10px 20px;
+    font-size: 1.5vw;
+
+}
+.menu{
+    background-color: black;
+    color: #ccc;
+    border-radius: 5px;
+}
+.boxtrai{
+    float: left;
+    width: 74%;
+
+
+}
+.boxphai{
+    float: left;
+    width: 24%;
+
+}
+.boxtitle{
+    color: #333;
+    padding: 10px;
+    background-color: #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #ccc;
+   
+
+}
+.boxcontent{
+    border-left: 1px solid #ccc;
+    border-radius: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-height: 200px;
+
+}
+.boxcenter2{
+    border-left: 1px solid #ccc;
+    border-radius: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
+    min-height: 200px;
+
+}
+.boxfooter{
+   
+    padding: 10px;
+    background-color: #eee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #ccc;
+   
+
+}

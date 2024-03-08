@@ -1,0 +1,15 @@
+input:focus{
+    color:aqua;
+    outline: none;
+    border: 3px solid red;
+    border-radius: 2px;
+
+}
+input:disabled{
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: aqua;
+    color:red;
+}
+
