@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex flex-row-reverse">
+            <a  href="/newProducts" type="button" class="btn btn-success">Success</a>
+        </div>
+        <form action method="get">
+          <div class="input-group">
+            <input value="<%=q %>" class="form-control" type="text" name="q">
+            <button class="btn btn-success"> tìm kiếm </button>
+          </div>
+        </form>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">no</th>
+                <th scope="col">image</th>
+                <th scope="col">name</th>
+                <th scope="col">detels</th>
+                <th scope="col">action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <% products.forEach((pro)=>{ %>
+                <th scope="row"><%= pro.id %></th>
+                    <td><a href="/products/<%= pro.id %>"><%= pro.name %></a></td>
+                    <td>
+                        <img style="width: 100px;" src="<%= pro.image %>" alt="">
+                    </td>
+                    <td><%= pro.detail %></td>
+                <td>
+                    <button type="button" class="btn btn-success btn-sm">Success</button>
+                    <button type="button" class="btn btn-danger btn-sm">Danger</button>
+                    <button type="button" class="btn btn-warning btn-sm">Warning</button>
+
+                </td>
+              </tr>
+                <% }) %> 
+            </tbody>
+          </table>
+
+
+    </div>
+
+  
+  <script src="/js/bootrap.js"></script>  
+</body>
+</html>
